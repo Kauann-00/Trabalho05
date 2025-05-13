@@ -1,4 +1,4 @@
-//
+//string
 
 package com.mycompany.leetspeaktranslator;
 
@@ -9,7 +9,6 @@ public class LeetSpeakTranslator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        // Mapeamento de letras para leet speak
         HashMap<Character, String> leetMap = new HashMap<>();
         leetMap.put('A', "4");
         leetMap.put('B', "8");
@@ -32,18 +31,14 @@ public class LeetSpeakTranslator {
         leetMap.put('X', "><");
         leetMap.put('Z', "2");
         
-        // Solicita o texto
         System.out.print("Digite o texto para converter em leet speak: ");
         String texto = scanner.nextLine().toUpperCase();
         
-        // Converte para leet speak
         StringBuilder textoLeet = new StringBuilder();
         for (char c : texto.toCharArray()) {
-            // Substitui se o caractere está no mapeamento, caso contrário mantém o original
             textoLeet.append(leetMap.getOrDefault(c, String.valueOf(c)));
         }
         
-        // Exibe o resultado
         System.out.println("Texto em leet speak: " + textoLeet);
         
         scanner.close();
