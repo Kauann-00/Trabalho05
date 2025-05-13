@@ -1,4 +1,4 @@
-// 
+// string
 
 package com.mycompany.digitoverificador;
 
