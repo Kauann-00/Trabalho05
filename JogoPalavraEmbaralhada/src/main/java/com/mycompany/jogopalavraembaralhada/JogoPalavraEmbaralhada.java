@@ -59,7 +59,6 @@ public class JogoPalavraEmbaralhada {
         scanner.close();
     }
     
-    // Método para embaralhar as letras de uma palavra
     private static String embaralharPalavra(String palavra) {
         List<String> letras = Arrays.asList(palavra.split(""));
         Collections.shuffle(letras);
